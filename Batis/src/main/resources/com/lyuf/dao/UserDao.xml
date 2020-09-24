@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.lyuf.dao.UserDao">
+
+    <select id="findAll" resultType="user">
+        select id, name from person.user
+    </select>
+
+    <!-- 查询单个对象 -->
+    <select id="findById" resultType="com.lyuf.entity.User">
+        select * from person.user where id = #{id}
+    </select>
+
+
+
+    <insert id="addUser">
+
+        <selectKey keyProperty="id"  resultType="int" order="AFTER">
+            select last_insert_id();
+        </selectKey>
+        insert into person.user(name) values( #{name})
+
+    </insert>
+
+    <delete id="deleteUser">
+    delete from person.user where id = #{id}
+    </delete>
+
+    <update id="updateUser">
+        update person.user set name = #{name} where id = #{id}
+    </update>
+
+    <select id="findByName1" resultType="user">
+        select id,name from person.user where name like concat('%',#{name},'%')
+    </select>
+    <select id="findByName2" resultType="user">
+        select id,name from person.user where name like #{name}
+    </select>
+    <select id="findByName3" resultType="user">
+        select id,name from person.user where name like "%"'${value}'"%"
+    </select>
+
+    <select id="getTotalCount" resultType="java.lang.Integer">
+        select count(id) from person.user;
+    </select>
+
+    <select id="findByPageData" resultType="user">
+        select id,name from person.user limit #{num1},#{num2}
+    </select>
+</mapper>

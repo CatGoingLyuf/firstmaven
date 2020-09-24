@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Batis/Batis.iml" filepath="$PROJECT_DIR$/Batis/Batis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/maven-2/dao/dao.iml" filepath="$PROJECT_DIR$/maven-2/dao/dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/maven-2/entity/entity.iml" filepath="$PROJECT_DIR$/maven-2/entity/entity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/git/git.iml" filepath="$PROJECT_DIR$/git/git.iml" />
+      <module fileurl="file://$PROJECT_DIR$/maven-1/maven-1.iml" filepath="$PROJECT_DIR$/maven-1/maven-1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/maven-2/maven-2.iml" filepath="$PROJECT_DIR$/maven-2/maven-2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/maven-2/service/service.iml" filepath="$PROJECT_DIR$/maven-2/service/service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/maven-2/web/web.iml" filepath="$PROJECT_DIR$/maven-2/web/web.iml" />
+    </modules>
+  </component>
+</project>
